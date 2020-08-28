@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const port = process.env.PORT || 3000;
 
 // connect to the DB
-mongoose.connect(`mongodb+srv://admin:${process.env.DB_PASS}@restapicluster.tpcmj.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,  
+mongoose.connect(process.env.DB_CONNECTION,  
     { 
         useNewUrlParser: true,
         useUnifiedTopology: true,
