@@ -11,4 +11,8 @@ const router = require('express').Router()
 router.get('/', (req, res) => {
     res.send('Welcome to the api.');
 })
+
+router.get('/posts', (req, res) => {
+    res.send('Welcome to posts.');
+})
 module.exports = router
