@@ -28,7 +28,7 @@ router.get('/:postId', (req, res) => {
 // this saves the post from the body of the request to the Post document
 // what comes in from the req.body is an object so as long as the fields match the Post schema i can simply pass the body object to the new Post
 router.post('/', (req, res) => {
-    const post = new Post(req.body)
+    const post = new Post(req.body) 
 
     post.save()
     .then(data => {
